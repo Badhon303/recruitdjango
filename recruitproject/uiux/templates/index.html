@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %} 
+<html>
+<head>
+	<title>RecruitGenie</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"> 
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="{% static 'img/wave.png' %}">
+	<div class="container">
+		<div class="img">
+			<img src="{% static 'img/logo_img.png' %}">  
+		</div>
+		<div class="login-content">
+			<form action="index.html">
+				<img src="{% static 'img/avatar.svg' %}"> 
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5> 
+           		   		<input type="text" class="input">
+					</div>
+				</div>
+				<div class="input-div one">
+					<div class="i">
+							<i class="fas fa-check"></i>
+					</div>
+					<div class="div"> 
+						<div class="custom-select" style="width:200px;">
+							<select>
+							  <option disabled="disabled" selected="selected">Position</option>
+							  <option>Position1</option>
+                              <option>Position2</option>
+                              <option>Position3</option> 
+							</select>
+						</div>  
+					</div>
+				</div>   
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-envelope"></i>  
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Email</h5> 
+           		    	<input type="password" class="input">
+            	   </div>
+				</div>
+				
+            	<input type="submit" class="btn" value="Lets Start"> 
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
+
+
+<script src="{% static 'js/customselect.js' %}"></script> 
